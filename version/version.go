@@ -53,6 +53,7 @@ type MeshInfo []ServerInfo
 type ProxyInfo struct {
 	ID           string  `json:"ID"`
 	IstioVersion string  `json:"IstioVersion"`
+	ProxyID       string `json:"proxy,omitempty"`
 }
 
 // DockerBuildInfo contains and exposes Hub: buildHub and Tag: buildVersion
