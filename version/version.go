@@ -51,8 +51,8 @@ type MeshInfo []ServerInfo
 
 // ProxyInfo contains the version for a single data plane component
 type ProxyInfo struct {
-	ID           string
-	IstioVersion string
+	ID           string  `json:"ID"`
+	IstioVersion string  `json:"IstioVersion"`
 }
 
 // DockerBuildInfo contains and exposes Hub: buildHub and Tag: buildVersion
